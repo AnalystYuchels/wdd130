@@ -44,8 +44,7 @@ h2 {
 
 nav,
 p,
-section,
-article {
+section {
   margin: 16px;
   padding: 8px;
 }
@@ -54,11 +53,12 @@ article {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 100%;
+  margin: 0;
   padding: 16px 32px;
-  background-color: #E6E0F8;
-  /* lilac */
-  border-bottom: 1px solid #000;
-  /* sketch-style outline */
+  box-sizing: border-box;
+  background-color: var(--color-light-grey);
+  border-bottom: 2px solid var(--color-primary);
 }
 
 .logo-link {
@@ -69,7 +69,6 @@ article {
   height: 36px;
   width: auto;
   filter: grayscale(100%);
-  /* keeps the logo itself neutral, not colored */
 }
 
 .nav-links {
@@ -84,7 +83,6 @@ article {
   text-decoration: none;
   color: #000;
   font-family: 'Courier New', monospace;
-  /* rough, sketch-like feel */
   font-size: 14px;
   border-bottom: 1px dashed #000;
   padding-bottom: 2px;
@@ -96,6 +94,8 @@ article {
 
 .hero {
   position: relative;
+  overflow: hidden;
+  width: 100%;
 }
 
 .hero img {
@@ -108,28 +108,47 @@ h1 {
   position: absolute;
   top: 20px;
   width: 100%;
+  margin: 0;
   padding: 16px;
   text-align: center;
-  opacity: 0.7;
-  background-color: var(--color-accent);
-  color: #fff;
+  background-color: rgba(20, 19, 18, 0.75);
+  color: var(--color-white);
 }
 
 article {
   position: absolute;
-  top: 95px;
-  margin: 10px;
-  width: 100%;
-  padding: 10px;
-  text-align: left;
-  background-color: var(--color-primary-light);
-  color: var(--color-secondary-dark);
+  top: 90px;
+  left: 5%;
+  right: 5%;
+  bottom: 10%;
+  width: auto;
+  height: auto;
+  max-width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 0 15px;
+  margin: 15px;
+  box-sizing: border-box;
+  opacity: 0.9;
+  background-color: var(--color-light-grey);
+  border-left: 6px solid var(--color-primary);
+}
+
+article p {
+  order: 1;
+  color: var(--color-dark);
   font-size: 0.8em;
+  flex: 1;
+  margin: 0;
 }
 
 .hero article img {
-  float: right;
+  order: 2;
+  flex-shrink: 0;
   width: 125px;
+  height: auto;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
 }
 
