@@ -1,19 +1,19 @@
 :root {
   --color-primary: #C1272D;
   --color-primary-dark: #8B1E22;
-  --color-primary-light: #E85D5D;
-  --color-secondary: #6B5D4F;
-  --color-secondary-dark: #4A4038;
+  /* --color-primary-light: #E85D5D; */
+  /* --color-secondary: #6B5D4F;
+  --color-secondary-dark: #4A4038; */
   --color-accent: #3F5E3A;
-  --color-accent-light: #6B8F5E;
+  /* --color-accent-light: #6B8F5E; */
   --color-white: #F5F5F0;
   --color-light-grey: #D9D6CE;
-  --color-grey: #8C8880;
+  /* --color-grey: #8C8880; */
   --color-dark: #2B2A28;
-  --color-background: var(--color-white);
+  /* --color-background: var(--color-white); */
   --color-text: var(--color-dark);
-  --color-link: var(--color-primary);
-  --color-link-hover: var(--color-primary-dark);
+  /* --color-link: var(--color-primary); */
+  /* --color-link-hover: var(--color-primary-dark); */
   --font-heading: 'Montserrat', sans-serif;
   --font-body: 'Open Sans', sans-serif;
 }
@@ -115,7 +115,7 @@ h1 {
   color: var(--color-white);
 }
 
-article {
+.hero article {
   position: absolute;
   top: 90px;
   left: 5%;
@@ -146,6 +146,7 @@ article p {
 
 .hero article img {
   order: 2;
+  float: right;
   flex-shrink: 0;
   width: 125px;
   height: auto;
