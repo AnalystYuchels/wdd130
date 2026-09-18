@@ -1,0 +1,43 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 32px;
+  background-color: #E6E0F8;
+  /* lilac */
+  border-bottom: 1px solid #000;
+  /* sketch-style outline */
+}
+
+.logo-link {
+  display: inline-block;
+}
+
+.logo {
+  height: 36px;
+  width: auto;
+  filter: grayscale(100%);
+  /* keeps the logo itself neutral, not colored */
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 24px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #000;
+  font-family: 'Courier New', monospace;
+  /* rough, sketch-like feel */
+  font-size: 14px;
+  border-bottom: 1px dashed #000;
+  padding-bottom: 2px;
+}
+
+.nav-links a:hover {
+  border-bottom-style: solid;
+}
