@@ -1,0 +1,9 @@
+.logo {
+  height: 40px;
+  width: auto;
+  display: block;
+}
+
+.logo-link {
+  display: inline-block;
+}
