@@ -1,7 +1,4 @@
 :root {
-  --color-primary: #C1272D;
-  --color-accent: #3F5E3A;
-  --color-white: #F5F5F0;
   --color-light-grey: #D9D6CE;
   --color-dark: #2B2A28;
   --font-heading: 'Montserrat', sans-serif;
@@ -102,7 +99,7 @@ header {
   position: relative;
   overflow: hidden;
   width: 100%;
-  margin-top: 10px;
+  margin-top: 18px;
   border: 2px solid #777;
 }
 
@@ -140,7 +137,7 @@ header {
   border: 2px solid #888;
 }
 
-.company-mission {
+.hero article p {
   flex: 1;
   margin: 0;
   padding: 0;
@@ -149,8 +146,9 @@ header {
 }
 
 .hero article img {
-  width: 50px;
-  height: 78px;
+  float: right;
+  width: 90px;
+  height: 105px;
   object-fit: cover;
   flex-shrink: 0;
 }
@@ -168,6 +166,7 @@ header {
 .history h2 {
   grid-column: 1/4;
   margin-bottom: 5px;
+  text-align: center;
   font-size: 28px;
   color: #111;
 }
@@ -195,6 +194,7 @@ header {
 
 .adventures h2 {
   margin-bottom: 12px;
+  text-align: center;
   font-size: 27px;
   color: #111;
 }
@@ -220,7 +220,7 @@ header {
 }
 
 .adventures-gallery figcaption {
-  margin-top: 3px;
+  margin-top: 4px;
   font-size: 14px;
   color: #111;
 }
