@@ -28,7 +28,97 @@
   </header>
 
   <main>
+    <section class="contact-header">
+      <h1>Contact Us</h1>
 
+      <div class="company-info">
+        <h2>White Water Rafting Company</h2>
+        <p>123 Main River Street</p>
+        <p>Kolob, California</p>
+        <p>+1 999 999 9999</p>
+        <p>info@whitewater.com</p>
+      </div>
+    </section>
+
+    <section class="contact-section">
+      <div class="map-container">
+        <iframe src="https://www.google.com/maps?q=Kolob,+California&output=embed"
+          title="Map showing the location of White Water Rafting Company" loading="lazy"
+          allowfullscreen>
+        </iframe>
+      </div>
+
+      <div class="contact-form">
+        <form action="#" method="post">
+
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Your email address" required>
+          </div>
+
+          <fieldset>
+            <legend>Message Purpose</legend>
+
+            <label>
+              <input type="radio" name="purpose" value="general-inquiry" required>
+              General Inquiry
+            </label>
+
+            <label>
+              <input type="radio" name="purpose" value="reservation-question">
+              Reservation Question
+            </label>
+
+            <label>
+              <input type="radio" name="purpose" value="website-suggestion">
+              Website Suggestion
+            </label>
+          </fieldset>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Type your message here"
+              required></textarea>
+          </div>
+
+          <label class="subscribe">
+            <input type="checkbox" name="subscribe" value="yes">
+            Please subscribe me to the monthly newsletter
+          </label>
+
+          <button type="submit">Get in Touch!</button>
+
+        </form>
+      </div>
+    </section>
+
+    <section class="employees">
+      <h2>We Are Here to Serve You</h2>
+
+      <div class="employee-gallery">
+
+        <figure>
+          <img src="images/employee1.jpg" alt="Employee profile">
+          <figcaption>Customer Service Manager</figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/employee2.jpg" alt="Employee profile">
+          <figcaption>Reservations Manager</figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/employee3.jpg" alt="Employee profile">
+          <figcaption>Adventure Guide</figcaption>
+        </figure>
+
+      </div>
+    </section>
   </main>
 
   <footer>
